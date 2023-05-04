@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+  <title>AtlantStore</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1" />
+
+  <link rel="stylesheet" type="text/css" href="css/core.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+  
+  <nav class="menu">
+    <div class="menu__inner">
+      <ul class="list__link menu__list">
+        <div class="list__inner">
+          <li class="list__item_logo menu__item">
+            <h1 class="text_size_m">ATLANTSTORE</h1>
+          </li>
+          <li class="list__item menu__item">
+            <a class="text_size_s">Домой</a>
+          </li>
+          <li class="list__item menu__item">
+            <a class="link text_size_s">Стим игры</a>
+          </li>
+        </div>
+      </ul>
+      <ul class="list__action menu__list">
+        <div class="list__inner">
+          <li class="list__item menu__item">
+            <button class="button_theme_transparent text_size_s">Войти</button>
+          </li>
+          <li class="list__item menu__item">
+            <button class="button text_size_s text_weight_bold">Создать аккаунт</button>
+          </li>
+          <li class="list__item_media_tablet menu__item">
+            <button onclick="addClass('list__tablet', 'list__tablet_open')" class="button_theme_icon"><img src="../config/img/icon/menu.svg" class="icon_size_s"></button>
+          </li>
+        </div>
+      </ul>
+      <ul class="list__tablet menu__list">
+        <div class="list__inner_direction_column">
+          <li class="list__item_tablet menu__item">
+            <button onclick="removeClass('list__tablet', 'list__tablet_open')" class="button_theme_icon"><img src="../config/img/icon/close.svg" class="icon_size_s"></button>
+          </li>
+          <div class="list__group">
+            <li class="list__item_tablet menu__item">
+              <a class="text_size_s">Домой</a>
+            </li>
+            <li class="list__item_tablet menu__item">
+              <a class="link text_size_s">Стим игры</a>
+            </li>
+          </div>
+          <div class="list__group">
+            <li class="list__item_tablet menu__item">
+              <button class="button_theme_transparent text_size_s">Войти</button>
+            </li>
+            <li class="list__item_tablet menu__item">
+              <button class="button text_size_s text_weight_bold">Создать аккаунт</button>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="header">
+    <div class="header__inner">
+      <img class="header__poster">
+      <h1 class="text_size_el header__message">Добро пожаловать Юзер</h1>
+      <div class="input-search header__input-search">
+        <button class="button_theme_icon input-search__button"><img src="../config/img/icon/search.svg" class="icon_size_s"></button>
+        <input type="search" name="input-search__search" placeholder="Найти игру на сайте" class="input-search__input text_size_s">
+      </div>
+    </div>
+  </header>
+  
+  <section class="unit__recommended">
+    <div class="unit__inner">
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/atomic-heart.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Atomic Heart</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽530.55</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанре шутера от первого лица с элементами ролевой игры, разработанная российской студией Mundfish. Выход проекта состоялся 21 февраля 2023 года для стационарных игровых консолей PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S и персональных компьютеров под управлением операционной системы Windows[5]. Дистрибьютором игры на территории России и стран СНГ выступила компания VK, а единственной официальной площадкой распространения Atomic Heart на территории СНГ стал их цифровой магазин VK Play для платформы Windows. Консольные версии реализуются методом параллельного импорта, из-за чего эта версия игры выходит в России позже основной даты релиза. В азиатском регионе дистрибуцией проекта занимается издательство 4Divinity, а во всём остальном мире — французская компания Focus Entertainment. Выход Atomic Heart на ПК в других странах осуществляется через цифровой магазин Steam.
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 10</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hearts-of-iron-iv.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-50%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hearts of Iron IV</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽250.00</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              Hearts of Iron IV — продолжение Hearts of Iron III и четвёртая игра из серии видеоигр Hearts of Iron. Как и предыдущие игры серии, Hearts of Iron IV фокусируется на Второй мировой войне. Игрок может взять под своё правление любое государство на Земле, существовавшее во время одного из сценариев, и привести его к победе или поражению в войне против других государств либо вовсе воздержаться от вступления в войну.
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 1</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/resident-evil-4.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Resident Evil 4</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽1000.55</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанрах survival horror и шутера от третьего лица[1], шестая игра основной серии Resident Evil (две предыдущие — Resident Evil Zero и Resident Evil Code: Veronica). Сюжетно является продолжением истории персонажей Леона Скотта Кеннеди и Ады Вонг из Resident Evil 2, а также Альберта Вескера, антагониста Resident Evil Zero, Resident Evil Code: Veronica и Resident Evil. В 2004 году, спустя шесть лет после событий Resident Evil 2 и Resident Evil Code: Veronica, Леон является правительственным агентом и отправляется на задание в испанскую сельскую деревушку, где ему предстоит спасти Эшли Грэм, дочь президента США, похищенную таинственным культом, а также вновь встретиться с Адой Вонг, работающей на Альберта Вескера. Появление Вескера происходит в дополнительных сценариях Separate Ways и Assignment Ada, посвящённых игре за Аду Вонг. В режиме The Mercenaries также предоставляется возможность игры за Вескера и других персонажей[⇨].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 5</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hogwarts-legacy.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-20%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hogwarts Legacy</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽2500.35</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанре action/RPG, разработанная американской студией Avalanche Software и изданная Warner Bros. Interactive Entertainment под лейблом Portkey Games. Действие игры разворачивается в фэнтезийной вселенной «Гарри Поттера» в XIX веке. Изначально выход игры на платформах Windows, PlayStation 4, PlayStation 5, Xbox One и Xbox Series X/S был запланирован на 2021 год[3][4], но в январе 2021 года разработчики объявили о переносе даты выхода на 2022 год. 15 декабря разработчики анонсировали дату выхода игры — 10 февраля 2023 года, для консолей текущего поколения и ПК. Релиз игры для консолей прошлого поколения изначально должен был состояться 4 апреля 2023 года[5], но позднее был перенесён на 5 мая того же года[6].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 2</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  <section class="unit__discount">
+    <h2 class="unit__header text_size_l text_style_red">Скидки</h2>
+    <div class="unit__inner">
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/atomic-heart.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Atomic Heart</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽530.55</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанре шутера от первого лица с элементами ролевой игры, разработанная российской студией Mundfish. Выход проекта состоялся 21 февраля 2023 года для стационарных игровых консолей PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S и персональных компьютеров под управлением операционной системы Windows[5]. Дистрибьютором игры на территории России и стран СНГ выступила компания VK, а единственной официальной площадкой распространения Atomic Heart на территории СНГ стал их цифровой магазин VK Play для платформы Windows. Консольные версии реализуются методом параллельного импорта, из-за чего эта версия игры выходит в России позже основной даты релиза. В азиатском регионе дистрибуцией проекта занимается издательство 4Divinity, а во всём остальном мире — французская компания Focus Entertainment. Выход Atomic Heart на ПК в других странах осуществляется через цифровой магазин Steam.
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 10</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hearts-of-iron-iv.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-50%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hearts of Iron IV</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽250.00</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              Hearts of Iron IV — продолжение Hearts of Iron III и четвёртая игра из серии видеоигр Hearts of Iron. Как и предыдущие игры серии, Hearts of Iron IV фокусируется на Второй мировой войне. Игрок может взять под своё правление любое государство на Земле, существовавшее во время одного из сценариев, и привести его к победе или поражению в войне против других государств либо вовсе воздержаться от вступления в войну.
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 1</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/resident-evil-4.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Resident Evil 4</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽1000.55</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанрах survival horror и шутера от третьего лица[1], шестая игра основной серии Resident Evil (две предыдущие — Resident Evil Zero и Resident Evil Code: Veronica). Сюжетно является продолжением истории персонажей Леона Скотта Кеннеди и Ады Вонг из Resident Evil 2, а также Альберта Вескера, антагониста Resident Evil Zero, Resident Evil Code: Veronica и Resident Evil. В 2004 году, спустя шесть лет после событий Resident Evil 2 и Resident Evil Code: Veronica, Леон является правительственным агентом и отправляется на задание в испанскую сельскую деревушку, где ему предстоит спасти Эшли Грэм, дочь президента США, похищенную таинственным культом, а также вновь встретиться с Адой Вонг, работающей на Альберта Вескера. Появление Вескера происходит в дополнительных сценариях Separate Ways и Assignment Ada, посвящённых игре за Аду Вонг. В режиме The Mercenaries также предоставляется возможность игры за Вескера и других персонажей[⇨].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 5</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hogwarts-legacy.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-20%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hogwarts Legacy</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽2500.35</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанре action/RPG, разработанная американской студией Avalanche Software и изданная Warner Bros. Interactive Entertainment под лейблом Portkey Games. Действие игры разворачивается в фэнтезийной вселенной «Гарри Поттера» в XIX веке. Изначально выход игры на платформах Windows, PlayStation 4, PlayStation 5, Xbox One и Xbox Series X/S был запланирован на 2021 год[3][4], но в январе 2021 года разработчики объявили о переносе даты выхода на 2022 год. 15 декабря разработчики анонсировали дату выхода игры — 10 февраля 2023 года, для консолей текущего поколения и ПК. Релиз игры для консолей прошлого поколения изначально должен был состояться 4 апреля 2023 года[5], но позднее был перенесён на 5 мая того же года[6].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 2</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/atomic-heart.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Atomic Heart</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽530.55</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанре шутера от первого лица с элементами ролевой игры, разработанная российской студией Mundfish. Выход проекта состоялся 21 февраля 2023 года для стационарных игровых консолей PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S и персональных компьютеров под управлением операционной системы Windows[5]. Дистрибьютором игры на территории России и стран СНГ выступила компания VK, а единственной официальной площадкой распространения Atomic Heart на территории СНГ стал их цифровой магазин VK Play для платформы Windows. Консольные версии реализуются методом параллельного импорта, из-за чего эта версия игры выходит в России позже основной даты релиза. В азиатском регионе дистрибуцией проекта занимается издательство 4Divinity, а во всём остальном мире — французская компания Focus Entertainment. Выход Atomic Heart на ПК в других странах осуществляется через цифровой магазин Steam.
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 10</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hearts-of-iron-iv.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-50%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hearts of Iron IV</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽250.00</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              Hearts of Iron IV — продолжение Hearts of Iron III и четвёртая игра из серии видеоигр Hearts of Iron. Как и предыдущие игры серии, Hearts of Iron IV фокусируется на Второй мировой войне. Игрок может взять под своё правление любое государство на Земле, существовавшее во время одного из сценариев, и привести его к победе или поражению в войне против других государств либо вовсе воздержаться от вступления в войну.
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 1</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/resident-evil-4.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Resident Evil 4</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽1000.55</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанрах survival horror и шутера от третьего лица[1], шестая игра основной серии Resident Evil (две предыдущие — Resident Evil Zero и Resident Evil Code: Veronica). Сюжетно является продолжением истории персонажей Леона Скотта Кеннеди и Ады Вонг из Resident Evil 2, а также Альберта Вескера, антагониста Resident Evil Zero, Resident Evil Code: Veronica и Resident Evil. В 2004 году, спустя шесть лет после событий Resident Evil 2 и Resident Evil Code: Veronica, Леон является правительственным агентом и отправляется на задание в испанскую сельскую деревушку, где ему предстоит спасти Эшли Грэм, дочь президента США, похищенную таинственным культом, а также вновь встретиться с Адой Вонг, работающей на Альберта Вескера. Появление Вескера происходит в дополнительных сценариях Separate Ways и Assignment Ada, посвящённых игре за Аду Вонг. В режиме The Mercenaries также предоставляется возможность игры за Вескера и других персонажей[⇨].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 5</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hogwarts-legacy.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-20%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hogwarts Legacy</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽2500.35</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанре action/RPG, разработанная американской студией Avalanche Software и изданная Warner Bros. Interactive Entertainment под лейблом Portkey Games. Действие игры разворачивается в фэнтезийной вселенной «Гарри Поттера» в XIX веке. Изначально выход игры на платформах Windows, PlayStation 4, PlayStation 5, Xbox One и Xbox Series X/S был запланирован на 2021 год[3][4], но в январе 2021 года разработчики объявили о переносе даты выхода на 2022 год. 15 декабря разработчики анонсировали дату выхода игры — 10 февраля 2023 года, для консолей текущего поколения и ПК. Релиз игры для консолей прошлого поколения изначально должен был состояться 4 апреля 2023 года[5], но позднее был перенесён на 5 мая того же года[6].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 2</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  <section class="unit__newest">
+    <h2 class="unit__header text_size_l text_style_blue">Новинки</h2>
+    <div class="unit__inner">
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/resident-evil-4.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Resident Evil 4</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽1000.55</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанрах survival horror и шутера от третьего лица[1], шестая игра основной серии Resident Evil (две предыдущие — Resident Evil Zero и Resident Evil Code: Veronica). Сюжетно является продолжением истории персонажей Леона Скотта Кеннеди и Ады Вонг из Resident Evil 2, а также Альберта Вескера, антагониста Resident Evil Zero, Resident Evil Code: Veronica и Resident Evil. В 2004 году, спустя шесть лет после событий Resident Evil 2 и Resident Evil Code: Veronica, Леон является правительственным агентом и отправляется на задание в испанскую сельскую деревушку, где ему предстоит спасти Эшли Грэм, дочь президента США, похищенную таинственным культом, а также вновь встретиться с Адой Вонг, работающей на Альберта Вескера. Появление Вескера происходит в дополнительных сценариях Separate Ways и Assignment Ada, посвящённых игре за Аду Вонг. В режиме The Mercenaries также предоставляется возможность игры за Вескера и других персонажей[⇨].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 5</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hogwarts-legacy.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-20%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hogwarts Legacy</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽2500.35</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанре action/RPG, разработанная американской студией Avalanche Software и изданная Warner Bros. Interactive Entertainment под лейблом Portkey Games. Действие игры разворачивается в фэнтезийной вселенной «Гарри Поттера» в XIX веке. Изначально выход игры на платформах Windows, PlayStation 4, PlayStation 5, Xbox One и Xbox Series X/S был запланирован на 2021 год[3][4], но в январе 2021 года разработчики объявили о переносе даты выхода на 2022 год. 15 декабря разработчики анонсировали дату выхода игры — 10 февраля 2023 года, для консолей текущего поколения и ПК. Релиз игры для консолей прошлого поколения изначально должен был состояться 4 апреля 2023 года[5], но позднее был перенесён на 5 мая того же года[6].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 2</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  <section class="unit__best-rating">
+    <h2 class="unit__header text_size_l">Лучший Рейтинг <img src="../config/img/icon/star.svg" class="icon_size_m"></h2>
+    <div class="unit__inner">
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hearts-of-iron-iv.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-50%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hearts of Iron IV</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽250.00</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              Hearts of Iron IV — продолжение Hearts of Iron III и четвёртая игра из серии видеоигр Hearts of Iron. Как и предыдущие игры серии, Hearts of Iron IV фокусируется на Второй мировой войне. Игрок может взять под своё правление любое государство на Земле, существовавшее во время одного из сценариев, и привести его к победе или поражению в войне против других государств либо вовсе воздержаться от вступления в войну.
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 1</p>
+          </div>
+        </div>
+      </article>
+      <article style="background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, .2)), url(../game-card/img/hogwarts-legacy.jpg); 
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      background-position: center;" class="game-card unit__game-card">
+        <div class="game-card__badges">
+          <div class="badge__discount text_size_s text-mobile_size_s">
+            <p><b>-20%</b></p>
+          </div>
+          <div class="badge__rating">
+            <img src="../game-card/img/rating/5.svg" class="icon_size_m">
+          </div>
+        </div>
+        <div class="game-card__info">
+          <div class="game-card__row">
+            <h3 class="game-card__name text_size_s text-mobile_size_s">Hogwarts Legacy</h3>
+            <p class="game-card__price text_size_s text-mobile_size_s"><b>₽2500.35</b></p>
+          </div>
+          <div class="game-card__row">
+            <p class="game-card__description text_size_s">
+              компьютерная игра в жанре action/RPG, разработанная американской студией Avalanche Software и изданная Warner Bros. Interactive Entertainment под лейблом Portkey Games. Действие игры разворачивается в фэнтезийной вселенной «Гарри Поттера» в XIX веке. Изначально выход игры на платформах Windows, PlayStation 4, PlayStation 5, Xbox One и Xbox Series X/S был запланирован на 2021 год[3][4], но в январе 2021 года разработчики объявили о переносе даты выхода на 2022 год. 15 декабря разработчики анонсировали дату выхода игры — 10 февраля 2023 года, для консолей текущего поколения и ПК. Релиз игры для консолей прошлого поколения изначально должен был состояться 4 апреля 2023 года[5], но позднее был перенесён на 5 мая того же года[6].
+            </p>
+          </div>
+          <div class="game-card__row">
+            <button class="button game-card__buy text_size_s text_weight_bold">Купить</button>
+            <p class="game-card__stock text_size_s">В наличии: 2</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  <section class="unit__faq">
+    <h2 class="unit__header text_size_l">FAQ</h2>
+    <div class="unit__inner_direction_column">
+      <details class="unit__answer-question">
+        <summary class="unit__question text_size_s text_weight_bold">Как активировать ключ Steam на ПК?</summary>
+        <p class="unit__answer text_size_s">
+          Запустите Steam и войдите в свой аккаунт.
+          Откройте меню «Игры» вверху клиента Steam.
+          Выберите пункт «Активировать через Steam...».
+          Следуйте инструкциям на экране, чтобы завершить активацию игры в Steam.
+        </p>
+      </details>
+      <details class="unit__answer-question">
+        <summary class="unit__question text_size_s text_weight_bold">Почему компьютерные игры дешевле консольных (Xbox/Playstation)?</summary>
+        <p class="unit__answer text_size_s">
+          Если у магазина есть региональные ценники, то должна быть и региональная защита, чтобы условный Джон не мог купить игру по цене, предназначенной для условного Ивана. У Steam (как и у всех прочих популярных цифровых дистрибьюторов ПК-игр) такая защита есть. Аккаунты жёстко привязаны к геолокации, и купленные в одном регионе игры просто не будут работать в другом. На первых порах Steam даже нещадно банил всех, кто использовал банальный прокси.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <script src="../config/js/config.js"></script>
+  
+</body>
+
+</html>
