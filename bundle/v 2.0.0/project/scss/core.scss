@@ -1,0 +1,124 @@
+@import "../../config/scss/config";
+
+
+@import "../../../../common.blocks/mask/mask";
+@import "../../../../common.blocks/mask/_visibled/mask_visibled";
+
+@import "../../../../common.blocks/button/button";
+@import "../../../../tablet.blocks/button/button";
+@import "../../../../common.blocks/button/_theme/_icon/button_theme_icon";
+@import "../../../../tablet.blocks/button/_theme/_icon/button_theme_icon";
+@import "../../../../common.blocks/button/_theme/_quick-link/button_theme_quick-link";
+@import "../../../../tablet.blocks/button/_theme/_quick-link/button_theme_quick-link";
+@import "../../../../common.blocks/button/_theme/_transparent/button_theme_transparent";
+@import "../../../../tablet.blocks/button/_theme/_transparent/button_theme_transparent";
+
+@import "../../../../common.blocks/text/_size/_el/text_size_el";
+@import "../../../../common.blocks/text/_size/_l/text_size_l";
+@import "../../../../common.blocks/text/_size/_m/text_size_m";
+@import "../../../../common.blocks/text/_size/_s/text_size_s";
+@import "../../../../common.blocks/text/_size/_es/text_size_es";
+@import "../../../../common.blocks/text/_style/_blue/text_style_blue";
+@import "../../../../common.blocks/text/_style/_red/text_style_red";
+@import "../../../../common.blocks/text/_weight/_bold/text_weight_bold";
+
+@import "../../../../common.blocks/icon/_size/_m/icon_size_m";
+@import "../../../../common.blocks/icon/_size/_s/icon_size_s";
+@import "../../../../common.blocks/icon/_size/_favorites/icon_size_favorites";
+@import "../../../../common.blocks/icon/_size/_pull/icon_size_pull";
+
+@import "../../../../common.blocks/link/link";
+@import "../../../../tablet.blocks/link/link";
+
+@import "../../../../common.blocks/hr/hr";
+
+@import "../../../../common.blocks/input-search/input-search";
+@import "../../../../tablet.blocks/input-search/input-search";
+@import "../../../../common.blocks/input-search/__button/input-search__button";
+@import "../../../../common.blocks/input-search/__input/input-search__input";
+
+@import "../../../../common.blocks/filter/__game-card/filter__game-card";
+@import "../../../../common.blocks/filter/__inner/filter__inner";
+@import "../../../../common.blocks/filter/__views/filter__views";
+
+@import "../../../../common.blocks/views/views";
+@import "../../../../common.blocks/views/__column/views__column";
+@import "../../../../common.blocks/views/__row/views__row";
+@import "../../../../common.blocks/views/__input/views__input";
+
+@import "../../../../common.blocks/game-card/__group/game-card__group";
+@import "../../../../common.blocks/game-card/game-card";
+@import "../../../../common.blocks/game-card/__inner/game-card__inner";
+@import "../../../../common.blocks/game-card/__info/game-card__info";
+@import "../../../../tablet.blocks/game-card/__info/game-card__info";
+@import "../../../../common.blocks/game-card/__badges/game-card__badges";
+@import "../../../../common.blocks/game-card/__column/game-card__column";
+@import "../../../../common.blocks/game-card/__name/game-card__name";
+@import "../../../../common.blocks/game-card/__row/game-card__row";
+@import "../../../../common.blocks/game-card/__price/game-card__price";
+@import "../../../../common.blocks/game-card/__buy/game-card__buy";
+@import "../../../../tablet.blocks/game-card/__buy/game-card__buy";
+@import "../../../../common.blocks/game-card/__input/game-card__input";
+@import "../../../../common.blocks/game-card/__favorites/game-card__favorites";
+@import "../../../../common.blocks/game-card/__in-stocks/game-card__in-stocks";
+@import "../../../../common.blocks/game-card/__description/game-card__description";
+@import "../../../../common.blocks/game-card/__tablet-pull/game-card__tablet-pull";
+@import "../../../../tablet.blocks/game-card/__tablet-pull/game-card__tablet-pull";
+@import "../../../../tablet.blocks/game-card/_pull/game-card_pull";
+@import "../../../../tablet.blocks/game-card/_pre-pull/game-card_pre-pull";
+
+@import "../../../../common.blocks/badge/__discount/badge__discount";
+@import "../../../../common.blocks/badge/__rating/badge__rating";
+@import "../../../../tablet.blocks/badge/__rating/badge__rating";
+
+@import "../../../../common.blocks/menu/menu";
+@import "../../../../common.blocks/menu/__inner/menu__inner";
+@import "../../../../common.blocks/menu/__list/menu__list";
+@import "../../../../common.blocks/menu/__item/menu__item";
+
+@import "../../../../common.blocks/list/__link/list__link";
+@import "../../../../common.blocks/list/__action/list__action";
+@import "../../../../common.blocks/list/__tablet/list__tablet";
+@import "../../../../tablet.blocks/list/__tablet/_open/list__tablet_open";
+@import "../../../../common.blocks/list/__inner/list__inner";
+@import "../../../../common.blocks/list/__inner/_direction/_column/list__inner_direction_column";
+@import "../../../../common.blocks/list/__group/list__group";
+@import "../../../../common.blocks/list/__item/list__item";
+@import "../../../../tablet.blocks/list/__item/list__item";
+@import "../../../../common.blocks/list/__item/_logo/list__item_logo";
+@import "../../../../common.blocks/list/__item/_tablet/list__item_tablet";
+@import "../../../../tablet.blocks/list/__item/_tablet/list__item_tablet";
+
+@import "../../../../common.blocks/marquee/marquee";
+
+@import "../../../../common.blocks/header/header";
+@import "../../../../common.blocks/header/__inner/header__inner";
+@import "../../../../common.blocks/header/__poster/header__poster";
+@import "../../../../common.blocks/header/__message/header__message";
+@import "../../../../common.blocks/header/__input-search/header__input-search";
+
+@import "../../../../common.blocks/unit/__recommended/unit__recommended";
+@import "../../../../common.blocks/unit/__discounts/unit__discounts";
+@import "../../../../common.blocks/unit/__newest/unit__newest";
+@import "../../../../common.blocks/unit/__faq/unit__faq";
+@import "../../../../common.blocks/unit/__inner/unit__inner";
+@import "../../../../common.blocks/unit/__inner/_last/unit__inner_last";
+@import "../../../../common.blocks/unit/__header/unit__header";
+@import "../../../../common.blocks/unit/__game-card/unit__game-card";
+@import "../../../../common.blocks/unit/__faq-item/unit__faq-item";
+
+@import "../../../../common.blocks/faq/faq";
+@import "../../../../common.blocks/faq/__inner/faq__inner";
+@import "../../../../common.blocks/faq/__item/faq__item";
+@import "../../../../tablet.blocks/faq/__item/faq__item";
+@import "../../../../common.blocks/faq/__question/faq__question";
+@import "../../../../common.blocks/faq/__answer/faq__answer";
+
+@import "../../../../common.blocks/footer/footer";
+@import "../../../../common.blocks/footer/__inner/footer__inner";
+@import "../../../../common.blocks/footer/__row/footer__row";
+@import "../../../../common.blocks/footer/__links/footer__links";
+@import "../../../../tablet.blocks/footer/__links/footer__links";
+@import "../../../../common.blocks/footer/__quick-links/footer__quick-links";
+
+@import "../../../../common.blocks/hidden/hidden";
