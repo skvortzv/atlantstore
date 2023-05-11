@@ -1,0 +1,9 @@
+.game-card__input {
+  height: 0;
+  width: 0;
+  
+  opacity: 0;
+}
+.game-card__input:checked + .game-card__favorites > .icon_size_favorites {
+  background-image: url(../../config/img/icon/favorites-checked.svg);
+}

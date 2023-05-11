@@ -1,0 +1,18 @@
+.button_theme_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $var-step $var-step * 2;
+  
+  opacity: .75;
+  
+  transition: opacity .25s ease-in-out;
+}
+@media (hover: hover) {
+  .button_theme_icon:hover {
+    opacity: 1;
+  }
+}
+.button_theme_icon:active {
+  opacity: .75;
+}

@@ -1,0 +1,10 @@
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+}
+.footer__row:last-child {
+  justify-content: center;
+}

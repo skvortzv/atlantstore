@@ -1,0 +1,9 @@
+.text_size_el {
+  @include fluid-font(36px, 64px);
+  
+  font-family: "Acrom ExtraBold", "Montserrat";
+  font-weight: 800;
+  text-align: center;
+  
+  color: $var-color-white;
+}

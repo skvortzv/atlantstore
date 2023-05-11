@@ -1,0 +1,10 @@
+.header__inner {
+  @include fluid-height(400px, 800px);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $var-step * 2;
+  isolation: isolate;
+}
