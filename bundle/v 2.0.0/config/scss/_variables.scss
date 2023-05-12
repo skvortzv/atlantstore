@@ -1,0 +1,28 @@
+$var-step: 10px;
+
+$var-color-black: #000505;
+$var-color-space-cadet: #3B3355;
+$var-color-ultra-violet: #5D5D81;
+$var-color-columbia-blue: #BFCDE0;
+$var-color-white: #FEFCFD;
+$var-color-amaranth: #CE4257;
+$var-color-apple-green: #7CB518;
+
+
+$var-z-index-normal: 0;
+$var-z-index-normal-1: 1;
+$var-z-index-normal-2: 2;
+$var-z-index-mask: 3;
+$var-z-index-side-bar: 4;
+$var-z-index-modal: 5;
+$var-z-index-last: 6;
+
+$var-media-mobile: ‘screen and (max-width: 47.9625em)’;
+$var-media-mobile-min: ‘screen and (min-width: 22.5em)’;
+$var-media-tablet: ‘screen and (max-width: 63.9625em)’;
+$var-media-tablet-min: ‘screen and (min-width: 48em)’;
+$var-media-tablet-interval: ‘screen and (min-width: 48em) and (max-width: 63.9625em)’;
+$var-media-dekstop: ‘screen and (max-width: 79.9625em)’;
+$var-media-dekstop-min: ‘screen and (min-width: 64em)’;
+$var-media-dekstop-interval: ‘screen and (min-width: 64em) and (max-width: 79.9625em)’;
+$var-media-dekstop-lg-min: ‘screen and (min-width: 80em)’;
