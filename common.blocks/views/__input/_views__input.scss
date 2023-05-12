@@ -1,0 +1,9 @@
+.views__input {
+  height: 0;
+  width: 0;
+  
+  opacity: 0;
+}
+.views__input:checked + .button_theme_icon {
+  opacity: 1;
+}

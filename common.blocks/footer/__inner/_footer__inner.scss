@@ -1,0 +1,8 @@
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: $var-step * 2;
+  gap: $var-step * 2;
+}

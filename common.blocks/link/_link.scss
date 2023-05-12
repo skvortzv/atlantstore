@@ -1,0 +1,13 @@
+.link {
+  opacity: .75;
+  
+  transition: opacity .25s ease-in-out;
+}
+@media (hover: hover) {
+  .link:hover {
+    opacity: 1;
+  }
+}
+.link:active {
+  opacity: .75;
+}

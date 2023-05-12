@@ -1,0 +1,13 @@
+.game-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $var-step * 2;
+  gap: $var-step;
+  
+  width: 100%;
+  
+  background: rgba(0, 5, 5, 0.2);
+  
+  backdrop-filter: blur(100px);
+}

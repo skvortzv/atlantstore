@@ -1,0 +1,13 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  
+  background-color: $var-color-black;
+  
+  transition: top .25s ease-in-out;
+  
+  z-index: $var-z-index-normal-2;
+}

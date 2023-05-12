@@ -1,0 +1,10 @@
+.text_size_l {
+  @include fluid-font(26px, 40px);
+  
+  width: max-content;
+  
+  font-family: "Acrom Bold", "Montserrat";
+  font-weight: 700;
+  
+  color: $var-color-white;
+}
