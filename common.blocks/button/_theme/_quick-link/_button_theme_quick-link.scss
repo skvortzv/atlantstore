@@ -1,0 +1,17 @@
+.button_theme_quick-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  opacity: .75;
+  
+  transition: opacity .25s ease-in-out;
+}
+@media (hover: hover) {
+  .button_theme_quick-link:hover {
+    opacity: 1;
+  }
+}
+.button_theme_quick-link:active {
+  opacity: .75;
+}

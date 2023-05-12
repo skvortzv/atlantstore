@@ -1,0 +1,9 @@
+.badge__discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $var-step $var-step * 2;
+  
+  background-color: $var-color-amaranth;
+  border-radius: 20px;
+}

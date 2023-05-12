@@ -1,0 +1,14 @@
+.header__poster {
+  @include fluid-width(300px, 600px);
+  @include fluid-height(200px, 400px);
+  
+  position: absolute;
+  
+  background: linear-gradient(0deg, rgba(0, 5, 5, 0.2), rgba(0, 5, 5, 0.2)), linear-gradient(110.18deg, rgba(254, 252, 253, 0.1) 0%, rgba(254, 252, 253, 0) 55%, rgba(254, 252, 253, 0.1) 100%), url(../img/header/__poster/default.jpg);
+  background-size: 100% 100%;
+  box-shadow: 0.5px 0.5px 0 rgba(254, 252, 253, 0.5), -0.5px -0.5px 0 rgba(254, 252, 253, 0.5), -5px -5px 50px rgba(254, 252, 253, 0.1);
+  border-radius: 5px;
+  transform: matrix(0.83, -0.55, 0, 1, 0, 0);
+  
+  z-index: $var-z-index-normal;
+}

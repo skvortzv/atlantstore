@@ -1,0 +1,13 @@
+.game-card__inner {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: $var-step * 2;
+  
+  width: 100%;
+  
+  z-index: $var-z-index-normal-1;
+}
