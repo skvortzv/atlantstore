@@ -1,0 +1,10 @@
+.icon_size_m {
+  @include fluid-box(24px, 32px);
+  
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

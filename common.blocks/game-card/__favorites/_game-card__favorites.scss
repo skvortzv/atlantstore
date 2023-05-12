@@ -1,0 +1,18 @@
+.game-card__favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $var-step;
+  
+  background: rgba(0, 5, 5, 0.5);
+  
+  border-radius: 20px;
+}
+@media (hover: hover) {
+  .game-card__favorites:hover > .icon_size_favorites {
+    background-image: url(../../config/img/icon/favorites-hover.svg);
+  }
+}
+.game-card__favorites:active > .icon_size_favorites {
+  background-image: url(../../config/img/icon/favorites.svg);
+}

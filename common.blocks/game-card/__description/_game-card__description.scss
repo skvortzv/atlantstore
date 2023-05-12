@@ -1,0 +1,16 @@
+.game-card__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  
+  font-family: "Acrom Regular", "Montserrat";
+  font-weight: 400;
+  
+  user-drag: auto;
+  -webkit-user-drag: auto;
+  user-select: auto;
+  -moz-user-select: auto;
+  -webkit-user-select: auto;
+  -ms-user-select: auto;
+}

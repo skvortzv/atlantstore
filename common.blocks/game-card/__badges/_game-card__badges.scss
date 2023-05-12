@@ -1,0 +1,8 @@
+.game-card__badges {
+  display: flex;
+  align-items: center;
+  padding: 0 $var-step;
+  gap: $var-step * 2;
+  
+  width: 100%;
+}

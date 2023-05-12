@@ -1,0 +1,10 @@
+.list__inner_direction_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: $var-step * 4 $var-step * 4 $var-step * 10;
+  gap: $var-step;
+  
+  height: 100%;
+}

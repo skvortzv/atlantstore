@@ -1,0 +1,9 @@
+.game-card__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: $var-step * 2;
+  
+  width: 100%;
+}

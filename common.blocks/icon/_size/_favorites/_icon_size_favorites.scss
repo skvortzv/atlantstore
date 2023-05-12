@@ -1,0 +1,16 @@
+.icon_size_favorites {
+  @include fluid-width(18px, 24px);
+  @include fluid-height(16px, 21px);
+  
+  background-image: url(../../config/img/icon/favorites.svg);
+  background-size: 100% 100%;
+  
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  
+  transition: background-image .25s ease-in-out;
+}
