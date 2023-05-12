@@ -1,0 +1,19 @@
+@media screen and (max-width: 63.9625em) and (hover: none) {
+  .game-card_pull {
+    box-shadow: 1px 1px 0 $var-color-columbia-blue, -1px -1px 0 $var-color-columbia-blue;
+  }
+  .game-card_pull > .game-card__inner > .game-card__info > .game-card__column > .hidden {
+    opacity: 1;
+
+    max-height: 1000px;
+  }
+  .game-card_pull::before {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  .game-card_pull > .game-card__inner > .game-card__info > .game-card__column > .game-card__row > .game-card__buy {
+    display: none;
+  }
+  .game-card_pull > .game-card__inner > .game-card__badges {
+    display: none;
+  }
+}
